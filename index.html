@@ -33,7 +33,7 @@
         <h2>Skills</h2>
         <ul>
           <li class="skills__description">English advance level: reading technical documentation, writing</li>
-          <li class="skills__description">Аdaptive/responsive markup, HTML5, CSS3, Bootstrap / Foundation / Flexbox / Grid
+          <li class="skills__description">Аdaptive/responsive markup, HTML5 / Pug, CSS3 / SASS / Stylus, Bootstrap / Foundation / Flexbox / Grid
             Css
           </li>
           <li class="skills__description">Adaptive/responsive markup for emails</li>
@@ -43,7 +43,8 @@
           <li class="skills__description">CMS (WP basics, Creating themes, work with plugins, ACF, multilingual plugins,
             optimization plugins, etc)
           </li>
-          <li class="skills__description">Version Control Systems: Git, GitHub, BitBucket, Gitlab</li>
+          <li class="skills__description">Version Control Systems: Git (GitHub, BitBucket, Gitlab)</li>
+          <li class="skills__description">Work with a task runner / build system: Gulp, Webpack</li>
           <li class="skills__description">Adobe Photoshop (Creating site templates)</li>
           <li class="skills__description">Adobe Experience Design (Creating site templates)</li>
         </ul>
@@ -105,6 +106,20 @@
   <section id="pins" class="pins">
     <h2>Latest pins</h2>
     <div class="pins__items">
+      <div class="pins__item">
+        <div class="pins__title">
+          <h3><a href="https://codepen.io/SergeyVoskresenskiy/pen/mNVYRv/">TABS and PUG</a></h3>
+        </div>
+        <div class="pins__description">
+          Pug / Styl / JS
+        </div>
+        <p class="codepen" data-height="387" data-theme-id="dark" data-default-tab="html,result" data-user="SergeyVoskresenskiy" data-slug-hash="VwZpmQX" data-preview="true" style="height: 387px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="TABS  and PUG ">
+          <span>See the Pen <a href="https://codepen.io/SergeyVoskresenskiy/pen/VwZpmQX/">
+          TABS and PUG </a> by Sergey Voskresenskiy (<a href="https://codepen.io/SergeyVoskresenskiy">@SergeyVoskresenskiy</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
       <div class="pins__item">
         <div class="pins__title">
           <h3><a href="https://codepen.io/SergeyVoskresenskiy/pen/mNVYRv/">Battery ( Web API : Navigator )</a></h3>
@@ -177,18 +192,35 @@
     </div>
   </section>
   <section id="contacts" class="contacts">
-    <h2>Contacts</h2>
-    <div class="contacts__lists">
-      <a href="tel:+380671305260" class="contacts__item">+38 (067) 130-52-60</a>
-      <a href="mailto:work.sergey.voskresenskiy@gmail.com" class="contacts__item">work.sergey.voskresenskiy@gmail.com</a>
-      <a href="https://t.me/Sheen_V" class="contacts__item">Telegram</a>
-      <a href="https://github.com/Sergey-Voskresenskiy" class="contacts__item">Github</a>
-      <a href="/assets/cv.pdf"  class="contacts__item">Download CV</a>
+    <div class="contacts__container">
+      <div class="contacts__lists">
+        <div class="contacts__form">
+          <form id="form" action="">
+            <h2>Type me</h2>
+            <div id="errorMessage">
+              Error?
+            </div>
+            <input type="text" id="formName" placeholder="Name">
+            <input type="text" id="formCompany" placeholder="Company">
+            <input type="email" id="formEmail" placeholder="Email">
+            <textarea id="formMessage" placeholder="Message"></textarea>
+            <button id="sendMail" type="button">Send</button>
+          </form>
+        </div>
+        <div class="contacts__items">
+          <h2>Contacts</h2>
+          <a href="tel:+380671305260" class="contacts__item">+38 (067) 130-52-60</a>
+          <a href="mailto:work.sergey.voskresenskiy@gmail.com" class="contacts__item">work.sergey.voskresenskiy@gmail.com</a>
+          <a href="https://t.me/Sheen_V" class="contacts__item">Telegram</a>
+          <a href="https://github.com/Sergey-Voskresenskiy" class="contacts__item">Github</a>
+          <a href="/assets/cv.pdf"  class="contacts__item">Download CV</a>
+        </div>
+      </div>
     </div>
   </section>
-  <!--<footer>
-    footer
-</footer>-->
+  <footer>
+    Sergey Voskresenskiy 2019
+</footer>
   <div class="menu">
   <div class="menu__container">
     <div class="menu__list">
@@ -210,12 +242,12 @@
     </div>
   </div>
 </div>
-  <section class="landscape">
+<!--  <section class="landscape">
   <h3>Turn the device into portrait mode</h3>
   <div class="banana">
     <img src="/assets/img/Banana.gif" alt="">
   </div>
-</section>
+</section>-->
 
 <script type="text/javascript" src="/assets/js/vendors.js"></script><script type="text/javascript" src="/assets/js/app.js"></script></body>
 </html>
